@@ -1,0 +1,31 @@
+<ion-view view-title="Your-Trucks">
+  <ion-content ng-controller="TruckCtrl">
+
+
+    <select ng-model="truckno" style="height:40px;width:150px; margin:10px 0px 10px 10px;" 
+            data-ng-options="truck as truck.no for truck in trucks" ng-change="changedValue(truckno)" >
+      <option value="">Select truck</option>
+    </select> 
+
+   
+<!--     <ion-list>
+      <ion-item ng-repeat="truck in trucks" 
+       ng-click="selected(truck)"> -->
+             <!-- href="#/app/trucks/{{truck.id}}" -->
+     <!--   <p> {{truck.no}}
+       </p>
+      
+      </ion-item>
+    </ion-list> --><br>
+         <b ng-bind="response"></b>
+        <div id="map-canvas" data-tab-disabled = "true">
+
+     </div>
+
+    
+  </ion-content>
+</ion-view>
+
+
+
+
